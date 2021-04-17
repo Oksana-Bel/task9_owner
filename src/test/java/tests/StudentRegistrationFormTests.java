@@ -13,7 +13,7 @@ public class StudentRegistrationFormTests extends TestBase {
 
     Faker faker = new Faker();
 
-     String
+    String
             firstName = faker.name().firstName(),
             lastName = faker.name().lastName(),
             userEmail = faker.internet().emailAddress(),
@@ -26,6 +26,7 @@ public class StudentRegistrationFormTests extends TestBase {
             address = faker.address().cityName(),
             state = "Uttar Pradesh",
             city = "Lucknow";
+
     @Test
     void successfulFillFormTest() {
         step("Open students registration form", () -> {
