@@ -26,7 +26,6 @@ public class StudentRegistrationFormTests extends TestBase {
             address = faker.address().cityName(),
             state = "Uttar Pradesh",
             city = "Lucknow";
-
     @Test
     void successfulFillFormTest() {
         step("Open students registration form", () -> {
